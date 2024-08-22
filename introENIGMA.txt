@@ -1,0 +1,8 @@
+# Uses Encrypt.txt and Frequencies.txt
+# Takes less than 2 seconds to run.
+# Unittests included
+
+# Methodology: Create Enigma object with two Rotor objects and class CrackCode searches for initial conditions.
+# First pass: Test first 50 characters. If common English words do not appear, eliminate
+# Second pass: Calculate chi-squared using Frequencies.txt for first 2000 characters
+# Initial condition with smallest chi-squared is solution.
